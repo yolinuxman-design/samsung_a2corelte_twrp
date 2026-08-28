@@ -1,0 +1,5 @@
+service storaged /system/bin/storaged
+    class core
+    user root
+    group root
+    writepid /dev/cpuset/system-background/tasks

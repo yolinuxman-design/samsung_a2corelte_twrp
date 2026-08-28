@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <project path="device/samsung/a2corelte" name="android_device_samsung_a2corelte" remote="github" revision="master" />
+</manifest>

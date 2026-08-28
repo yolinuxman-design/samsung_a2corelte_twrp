@@ -1,0 +1,8 @@
+service vold /system/bin/vold
+    class core
+    socket vold stream 0660 root mount
+    ioprio be 2
+    user root
+    group root
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:vold:s0

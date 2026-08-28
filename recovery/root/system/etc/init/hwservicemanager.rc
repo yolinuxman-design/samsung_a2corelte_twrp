@@ -1,0 +1,9 @@
+service hwservicemanager /system/bin/hwservicemanager
+    class core
+    user system
+    group system
+    critical
+    onrestart setprop hwservicemanager.ready false
+    onrestart class_restart hal
+    onrestart class_restart early_hal
+    writepid /dev/cpuset/system-background/tasks

@@ -1,0 +1,8 @@
+service uncrypt /system/bin/uncrypt
+    class main
+    socket uncrypt stream 600 system system
+    socket uncrypt_status stream 600 system system
+    disabled
+    user root
+    group root
+    seclabel u:r:uncrypt:s0
